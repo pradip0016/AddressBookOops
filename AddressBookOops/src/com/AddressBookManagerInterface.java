@@ -10,7 +10,7 @@ public interface AddressBookManagerInterface {
 
 	public void openaddressbook() throws ReflectiveOperationException, RuntimeException, IOException;
 
-	public void saveaddressbook() throws IOException;
+	public void saveaddressbook(String filen) throws IOException;
 
 	public void saveasaddressbook();
 
