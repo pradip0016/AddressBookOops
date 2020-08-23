@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.*;
 
 class AddressBookOops {
-	static Object ob;
+public static Object ob;
 	public static void main(String[] args) throws ReflectiveOperationException, RuntimeException, IOException {
 
 		while (true) {
@@ -22,7 +22,6 @@ class AddressBookOops {
 				ob=AddressbookManagerImplementation.newaddressbook();
 				break;
 			case 2:
-			
 				AddressbookManagerImplementation.openaddressbook();
 				break;
 			case 3:
