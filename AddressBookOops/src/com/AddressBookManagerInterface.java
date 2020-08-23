@@ -10,11 +10,11 @@ public interface AddressBookManagerInterface {
 
 	public void openaddressbook() throws ReflectiveOperationException, RuntimeException, IOException;
 
-	public void saveaddressbook(String filen) throws IOException;
+	public File saveaddressbook(String filen) throws IOException;
 
 	public void saveasaddressbook();
 
-	public void closeaddressbook();
+	public void closeaddressbook(File file);
 
 	public void quit();
 	

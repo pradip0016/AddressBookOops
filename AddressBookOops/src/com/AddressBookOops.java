@@ -1,10 +1,11 @@
 package com;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 class AddressBookOops {
 public static Object ob;
+public static File file;
 	public static void main(String[] args) throws ReflectiveOperationException, RuntimeException, IOException {
 
 		while (true) {
@@ -25,13 +26,13 @@ public static Object ob;
 				AddressbookManagerImplementation.openaddressbook();
 				break;
 			case 3:
-				AddressbookManagerImplementation.saveaddressbook(ob.toString());
+			file=AddressbookManagerImplementation.saveaddressbook(ob.toString());
 				break;
 			case 4:
 				AddressbookManagerImplementation.saveasaddressbook();
 				break;
 			case 5:
-				AddressbookManagerImplementation.closeaddressbook();
+				AddressbookManagerImplementation.closeaddressbook(file);
 				break;
 			case 6:
 				AddressbookManagerImplementation.quit();

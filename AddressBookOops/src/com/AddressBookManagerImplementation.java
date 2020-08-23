@@ -53,7 +53,7 @@ public class AddressBookManagerImplementation implements AddressBookManagerInter
 	}
 
 	@Override
-	public void saveaddressbook(String filen) throws IOException {
+	public File saveaddressbook(String filen) throws IOException {
 		System.out.println(filen);
 		System.out.println("Do U want To save created Address Book Y/N");
 		String op = sc.next();
@@ -64,7 +64,7 @@ public class AddressBookManagerImplementation implements AddressBookManagerInter
 		} else {
 			System.out.println("Not saved");
 		}
-
+return file;
 	}
 
 	@Override
@@ -90,11 +90,15 @@ public class AddressBookManagerImplementation implements AddressBookManagerInter
 	}
 
 	@Override
-	public void closeaddressbook() {
+	public void closeaddressbook(File file) {
+		file.exists();
+		System.out.println("Book closed");
+		
 	}
 
 	@Override
 	public void quit() {
+		System.exit(0);
 	}
 
 	@Override
